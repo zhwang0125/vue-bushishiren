@@ -15,11 +15,11 @@
 
 @font-face
   font-family 'fangzhengqingkebenyuesongjianti'
-  src url('../static/font/fangzhengqingkebenyuesongjianti.ttf')
+  src url('/static/font/fangzhengqingkebenyuesongjianti.ttf'), url('/vue-bushishiren/static/font/fangzhengqingkebenyuesongjianti.ttf')
 
 @font-face
   font-family 'fangzhengqitijianti'
-  src url('../static/font/fangzhengqitijianti.ttf')
+  src url('/static/font/fangzhengqitijianti.ttf'), url('/vue-bushishiren/static/font/fangzhengqitijianti.ttf')
 
 html, body, #app
   height 100%
