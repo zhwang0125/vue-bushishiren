@@ -23,8 +23,12 @@ module.exports = {
         loader: 'babel'
       },
       {
-        test: /\.(jpg|png|gif|ttf)$/,
-        loader: "file-loader"
+        test: /\.(jpg|png|gif)$/,
+        loader: "file-loader?name=img/[name].[ext]"
+      },
+      {
+        test: /\.ttf$/,
+        loader: "file-loader?name=font/[name].[ext]"
       }
     ]
   },
