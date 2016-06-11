@@ -527,6 +527,9 @@ API.createComment = (payload) => {
   if (payload.type == 'poetry') {
     url = `${URL}/poetries/${payload.refe}/comments`
   }
+  if (!payload.reply) {
+    delete payload.reply
+  }
   return new Promise((resolve, reject) => {
     $.ajax({
       type: 'POST',
